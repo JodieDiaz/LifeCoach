@@ -1,0 +1,16 @@
+.formulario-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px; /* Ajusta el margen superior según sea necesario */
+}
+
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+  /* Ajusta el ancho del formulario */
+  iframe[src*="https://docs.google.com/forms/d/e/1FAIpQLSdrtqVduEJpvn4aFxlmfqICpfeu4eWVq6cbLXZdmP6IPkxOMA/viewform?embedded=true"] {
+    width: 100%;
+    max-width: 400px; /* Ajusta el ancho máximo según tu diseño */
+  }
+}
