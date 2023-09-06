@@ -1,4 +1,17 @@
 
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+  /* Evita el desplazamiento horizontal */
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Ajusta el ancho de la página al ancho del dispositivo */
+  html, body {
+    width: 100%;
+    max-width: 100%;
+  }
+}
 
 /* Estilos para el header */
 header {

@@ -61,6 +61,16 @@ body {
   margin-bottom: 10px;
   font-family: 'Prata', serif;
 }
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .introduccion h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: 'Prata', serif;
+    text-align: center; /* Centra el texto horizontalmente */
+    letter-spacing: 1px; /* Ajusta el espaciado entre letras según tus preferencias */
+  }
+}
 
 .introduccion p {
   font-size: 16px;
