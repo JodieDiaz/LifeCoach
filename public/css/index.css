@@ -334,6 +334,29 @@ h1 {
   color: #419ac0;
 }
 
+/* Estilos para dispositivos móviles y pantallas pequeñas */
+@media (max-width: 768px) {
+  .testimonials-container {
+    padding: 20px; /* Reduce el espacio alrededor del contenedor */
+  }
+
+  .testimonials-container h2 {
+    font-size: 40px; /* Reduce el tamaño del título */
+    margin-bottom: 20px; /* Reduce el espacio inferior del título */
+  }
+
+  .testimonial-card {
+    margin-bottom: 30px; /* Reduce el espacio entre las tarjetas de testimonio */
+  }
+
+  .testimonial-content {
+    max-width: 100%; /* Hace que el contenido se ajuste al ancho de la pantalla */
+    padding: 20px; /* Reduce el espacio interior de la tarjeta */
+    font-size: 16px; /* Reduce el tamaño del texto */
+  }
+}
+
+
 #service-section {
   text-align: center;
   margin-bottom: 20px;
@@ -434,40 +457,50 @@ h1 {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .service-panel {
     margin: 10px 0;
-    flex-basis: 100%; /* Ocupar todo el ancho en una columna */
-    transform: none; /* Eliminar el efecto de escala */
+    flex-basis: 100%;
+    transform: none;
   }
 
   .service-image {
-    padding-bottom: 0; /* Eliminar el espacio para la imagen */
+    padding-bottom: 0;
     width: 400px;
-    height: 400px
+    height: 400px;
   }
 
   .service-image img {
-    width: 100%; /* Asegurarse de que la imagen ocupe todo el ancho */
-    height: 100%
+    width: 100%;
+    height: 100%;
   }
 
   .service-text {
-    position:-webkit-sticky; /* Posición estática para el texto */
-    width: 100%; /* Ancho completo */
-    padding: 10px 0; /* Agregar espaciado */
-    background-color: transparent; /* Fondo transparente */
-    color: #fff; /* Cambiar el color del texto */
+    position: absolute;
+    bottom: 0; /* Colocar el texto en la parte inferior */
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
     font-weight: bold;
-    opacity: 1; /* Mostrar siempre el texto */
+    opacity: 1;
+  }
+
+  .service-link {
+    display: block;
+    margin-top: 10px;
+    font-style: italic;
+    color: #ff7bb0;
   }
 
   .service-button {
-    margin: 15px 0; /* Añadir margen superior e inferior */
+    margin: 15px 0;
     padding: 10px 20px;
     font-size: 18px;
   }
 }
+
 
   
   .service-panel {
