@@ -1,7 +1,7 @@
 body {
   background-color: #ffffff;
   color: #ffffff;
-  font-family: 'Prata', serif;
+  font-family: 'Didact Gothic', sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -15,9 +15,10 @@ body {
 
 .conoceme-title {
   font-size: 70px;
-  color: #ff7bb0;
+  color: #555;
   text-align: center;
   margin-bottom: 10px;
+  font-family: 'Prata', serif;
 }
 
 /* Estilos para la sección "Experiencia de Dafne" */
@@ -52,21 +53,24 @@ body {
 .introduccion {
   flex: 1; /* El texto ocupará 1 parte del espacio disponible */
   text-align: justify; /* Alinea el texto a la izquierda */
+  margin-bottom: 30px;
 }
 
 .introduccion h3 {
   font-size: 24px;
   margin-bottom: 10px;
+  font-family: 'Prata', serif;
 }
 
 .introduccion p {
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 20px;
+  color: #666
 }
 
 .contactame-button {
-  background-color:#ff7bb0;
+  background-color:#b876b1;
   color: #ffffff;
   padding: 10px 20px;
   font-size: 16px;
@@ -74,10 +78,12 @@ body {
   border-radius: 4px;
   cursor: pointer;
   text-decoration: none; /* Elimina el subrayado */
+  font-family: 'Prata', serif;
+  margin-top: 20px;
 }
 
 .contactame-button:hover {
-  background-color: #a46e9f;
+  background-color: #ff7bb0;
 }
 
 /* Estilos para la sección "Experiencia de Dafne" en pantallas grandes */
@@ -114,11 +120,12 @@ body {
 
 .mi-historia-title {
   padding: 10px 20px;
+  font-family: 'Prata', serif;
 }
 
 .mi-historia-title h2 {
   font-size: 60px;
-  color: #000000;
+  color: #333;
   text-align: center;
   margin-bottom: 20px;
   margin-top: 20px;
@@ -129,7 +136,7 @@ body {
   margin-top: 20px;
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.6);
-  color: #000000;
+  color: #555;
   text-align: justify;
   line-height: 1.6;
 }

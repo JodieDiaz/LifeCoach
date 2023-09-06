@@ -1,9 +1,4 @@
-/* Estilos generales */
-body {
-  font-family: 'Prata', serif;
-  margin: 0;
-  font-family: Georgia, serif, sans-serif;
-}
+
 
 /* Estilos para el header */
 header {
@@ -69,6 +64,7 @@ header.scrolled {
   z-index: 999;
   height: 60px;
   width: 60px;
+  margin-left: 100px;
 }
 
 #logo img {

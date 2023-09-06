@@ -91,12 +91,14 @@ body {
 }
 
 .texto {
+  margin-top: 40px;
   text-align: justify;
   flex: 1; /* El texto ocupa todo el ancho en pantallas grandes */
   order: 2; /* Cambia el orden para que el texto vaya después de la cita */
   text-align: justify; /* Alinea el texto justificado */
-  color: #333; /* Color del texto en #333 (gris oscuro) */
+  color: #666; /* Color del texto en #333 (gris oscuro) */
   padding: 0 20px; /* Añade un poco de espacio horizontal alrededor del texto */
+  font-family: Arial, sans-serif;
 }
 
 /* Estilos para pantallas de escritorio */
@@ -443,7 +445,7 @@ body {
 }
 
 .link-portafolio:hover {
-  background-color: #a46e9f;
+  background-color: #49bcad;
 }
 
 
