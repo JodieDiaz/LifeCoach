@@ -1,3 +1,40 @@
+
+.banner-container {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  margin: 0; /* Elimina el margen */
+  padding: 0; /* Elimina cualquier relleno */
+}
+
+
+.banner-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.banner-text {
+  position:absolute;
+  top: 200px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0; /* Espaciado interior del texto */
+  color: #fff; /* Color del texto */
+  font-weight: bold;
+}
+
+.banner-text h2 {
+  font-size: 40px; /* Tamaño de fuente del título */
+  margin: 0; /* Elimina el margen predeterminado del título */
+  font-family: 'Prata', serif;
+}
+
+
+
+
 .formulario-container {
   display: flex;
   justify-content: center;
@@ -5,6 +42,7 @@
   flex-direction: column;
   margin-top: 50px; /* Ajusta el margen superior según sea necesario */
 }
+
 
 /* Estilos para pantallas pequeñas */
 @media screen and (max-width: 768px) {

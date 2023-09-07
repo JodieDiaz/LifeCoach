@@ -16,13 +16,15 @@
 /* Estilos para el header */
 header {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+  top: 10px;
+  left: 40px;
+  right: 40px;
+  width: calc(100% - 80px); 
   transition: background-color 0.3s ease;
   z-index: 999;
   background-color: rgba(184, 137, 177, 0.8);
   height: 60px;
+  border-radius: 50px
 }
 
 header.scrolled {
@@ -94,7 +96,7 @@ header.scrolled {
   text-decoration: none;
   padding: 5px 10px;
   align-items: center;
-  margin-left: 400px;
+  margin-left: 150px;
 }
 
 #nav a {
