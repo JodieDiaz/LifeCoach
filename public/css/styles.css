@@ -168,10 +168,14 @@ header.scrolled {
   background-color: #fff;
 }
 
+
+
 /* Estilos para el menú en pantallas pequeñas */
 @media (max-width: 768px) {
+
   #menu-toggle {
     display: block; /* Mostrar en pantallas pequeñas */
+    
   }
   
   #nav {
@@ -181,13 +185,14 @@ header.scrolled {
   #nav.active {
     display: flex;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.9);
-    position: absolute;
-    top: 60px;
-    right: 0;
-    width: 100%;
-    padding: 20px;
+    background-color: rgba(102, 70, 97, 0.626);
+    position:absolute;
+    top: 70px;
+    right: 0%;
+    width: 30%;
+    padding: 5px;
     z-index: 1000;
+    border-radius: 5%;
   }
   
   #nav.active a {
