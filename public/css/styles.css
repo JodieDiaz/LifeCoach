@@ -27,6 +27,7 @@ header {
   border-radius: 50px
 }
 
+
 header.scrolled {
   background-color: rgba(184, 137, 177, 0.6);
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
@@ -79,13 +80,22 @@ header.scrolled {
   z-index: 999;
   height: 60px;
   width: 60px;
-  margin-left: 100px;
+  margin-left: 0px;
+  border-radius: 50px
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .logo {
+    order: -1; /* Cambia el orden para mover el logo a la izquierda */
+  }
 }
 
 #logo img {
   width: 200px; /* Ajusta el tamaño según tus necesidades */
   height: 60px;
   margin-right: 10px; /* Ajusta el espaciado según tus necesidades */
+  border-radius: 50px
 }
 
 /* Estilos para el menú */
