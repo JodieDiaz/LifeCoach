@@ -9,6 +9,23 @@ body {
   padding: 0;
   
 }
+@media (max-width: 768px) {
+  /* Evita el desplazamiento horizontal */
+  body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Ajusta el ancho de la página al ancho del dispositivo */
+  html, body {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
+
 h1 {
   font-family:'Prata', serif;/* Cambia "TuFuentePreferida" por el nombre de la fuente que deseas */
 }
