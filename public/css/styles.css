@@ -4,12 +4,21 @@
   /* Evita el desplazamiento horizontal */
   body {
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
   }
 
   /* Ajusta el ancho de la página al ancho del dispositivo */
   html, body {
     width: 100%;
     max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    position:absolute;
+    justify-content: center;
   }
 }
 
@@ -27,12 +36,6 @@ header {
   border-radius: 50px
 }
 
-
-header.scrolled {
-  background-color: rgba(184, 137, 177, 0.6);
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-}
-
 /* Nuevo contenedor para el logo y el menú */
 #header-content {
   display: flex;
@@ -44,17 +47,6 @@ header.scrolled {
   height: 8000px;
 }
 
-#ribbon {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 8px; /* Altura de la cinta */
-  background-color: #ff7bb0; /* Color de la cinta */
-  transition: background-color 0.3s ease;
-  transform: scaleY(0); /* Inicialmente oculta */
-  transform-origin: top; /* Para que se expanda desde arriba */
-}
 
 /* Estilos para el contenedor del logo y el menú */
 #navbar {
@@ -62,7 +54,6 @@ header.scrolled {
   align-items: center;
   justify-content: flex-end;
   padding: 20px;
-  /* position: fixed; */ /* Comenta esta línea */
   top: 0;
   right: 0;
   width: 100%;
