@@ -1,5 +1,6 @@
 /* Estilos generales */
 body {
+  overflow-x: hidden;
   background-color: #ffffff;
   color: #ffffff;
   font-family: Arial, sans-serif;

@@ -20,6 +20,11 @@
     position:absolute;
     justify-content: center;
   }
+  
+  #header-content{
+    justify-content: center;
+  }
+
 }
 
 /* Estilos para el header */

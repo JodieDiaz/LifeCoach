@@ -1,4 +1,5 @@
 body {
+  overflow-x: hidden;
   background-color: #ffffff;
   color: #ffffff;
   font-family: 'Didact Gothic', sans-serif;
