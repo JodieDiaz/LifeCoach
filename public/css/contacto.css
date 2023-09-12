@@ -52,9 +52,9 @@
 
   iframe[src*="https://docs.google.com/forms/d/e/1FAIpQLSdrtqVduEJpvn4aFxlmfqICpfeu4eWVq6cbLXZdmP6IPkxOMA/viewform?embedded=true"] 
   {
-    width: 100%;
-    max-width: 200px; 
-    height: auto; 
+    width: 40%;
+    max-width: 60px; 
+    height: 50%; 
   }
 }
 
