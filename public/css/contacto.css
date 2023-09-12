@@ -1,27 +1,12 @@
-@media (max-width: 768px) {
-  /* Evita el desplazamiento horizontal */
-  body {
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-  }
-
-  /* Ajusta el ancho de la página al ancho del dispositivo */
-  html, body {
-    width: 100%;
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-}
 
 .banner-container {
   position: relative;
   width: 100%;
   height: 350px;
   overflow: hidden;
-  margin: 0; /* Elimina el margen */
-  padding: 0; /* Elimina cualquier relleno */
+  margin: 0; 
+  padding: 0; 
+  
 }
 
 
@@ -39,14 +24,14 @@
   left: 0;
   width: 100%;
   text-align: center;
-  padding: 20px 0; /* Espaciado interior del texto */
-  color: #fff; /* Color del texto */
+  padding: 20px 0; 
+  color: #fff; 
   font-weight: bold;
 }
 
 .banner-text h2 {
-  font-size: 40px; /* Tamaño de fuente del título */
-  margin: 0; /* Elimina el margen predeterminado del título */
+  font-size: 40px;
+  margin: 0; 
   font-family: 'Prata', serif;
 }
 
@@ -58,16 +43,30 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 5px; /* Ajusta el margen superior según sea necesario */
+  margin-top: 20px;
+  z-index: 1;
 }
 
 
-/* Estilos para pantallas pequeñas */
-@media screen and (max-width: 768px) {
-  /* Ajusta el ancho del formulario */
-  iframe[src*="https://docs.google.com/forms/d/e/1FAIpQLSdrtqVduEJpvn4aFxlmfqICpfeu4eWVq6cbLXZdmP6IPkxOMA/viewform?embedded=true"] {
-    width: 60%; /* Establece el ancho al 100% del contenedor padre */
+@media screen and (max-width:768px) {
+
+  iframe[src*="https://docs.google.com/forms/d/e/1FAIpQLSdrtqVduEJpvn4aFxlmfqICpfeu4eWVq6cbLXZdmP6IPkxOMA/viewform?embedded=true"] 
+  {
+    width: 100%;
+    max-width: 200px; 
+    height: auto; 
   }
 }
+
+@media screen and (max-width: 768px) {
+  .banner-container img {
+    width: 100%; /* Establecer el ancho al 100% para ocupar todo el ancho de la pantalla */
+    height: auto; /* Mantener la proporción original de la imagen */
+    margin: 0; /* Eliminar márgenes */
+    left: 0;
+  }
+}
+
+
 
 

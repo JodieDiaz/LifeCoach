@@ -1,33 +1,6 @@
 
-/* Estilo para títulos */
-body {
-  overflow-x: hidden;
-  background-color: #ffffff;
-  color: #ffffff;
-  font-family: 'Didact Gothic', sans-serif;
-  margin: 0;
-  padding: 0;
-  
-}
-@media (max-width: 768px) {
-  /* Evita el desplazamiento horizontal */
-  body {
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-  }
-
-  /* Ajusta el ancho de la página al ancho del dispositivo */
-  html, body {
-    width: 100%;
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-}
-
 h1 {
-  font-family:'Prata', serif;/* Cambia "TuFuentePreferida" por el nombre de la fuente que deseas */
+  font-family:'Prata', serif;
 }
 
 
@@ -42,7 +15,7 @@ h1 {
     position: relative;
     overflow: hidden;
     background-size: cover;
-    transition: background-position 0.3s ease; /* Agrega transición para suavizar el efecto */
+    transition: background-position 0.3s ease; 
 }
     
 
@@ -56,7 +29,7 @@ h1 {
     background-image: url('/img/Migrante en Finlandia.png');
     background-size: cover;
     background-position: center 25%;
-    transition: transform 0.1s ease; /* Agregar transición para un efecto suave */
+    transition: transform 0.1s ease; 
 }
 
 #hero-section h1 {
@@ -72,10 +45,10 @@ h1 {
     margin: 20px;
 }
 
-/* Estilo adicional para pantallas de escritorio */
+
 @media screen and (min-width: 769px) {
     .parallax-bg {
-        background-position: center center 10%; /* Ajusta la posición de la imagen de fondo en pantallas grandes */
+      background-position: center center 10%; 
     }
 }
 
@@ -157,17 +130,17 @@ h1 {
 .styled-button {
   background-color: #b889b1;
   color: #ffffff;
-  padding: 20px 30px; /* Aumentar el tamaño del botón */
+  padding: 20px 30px; 
   border: none;
-  border-radius: 50px; /* Hacer el borde ovalado */
+  border-radius: 50px; 
   cursor: pointer;
   display: inline-block;
   font-size: 20px;
   transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
-  font-family: "Prata", sans-serif; /* Cambia "TuFuentePreferida" por el nombre de la fuente que desees */
+  font-family: "Prata", sans-serif; 
 }
 
-/* Efecto 3D en hover */
+
 .styled-button:hover {
   transform: scale(1.05); /* Aumentar el tamaño al pasar el mouse */
   background-color: #09ac97; /* Cambia a un tono más oscuro en hover */
@@ -175,23 +148,17 @@ h1 {
 }
 
 
-
-
-/* Estilos para el enlace dentro del botón */
 .button-link {
-  text-decoration: none; /* Elimina el subrayado */
+  text-decoration: none; 
   color: inherit; /* Hereda el color del texto del botón */
 }
 
-/* Estilos para el botón al pasar el mouse */
 .styled-button:hover {
   background-color: #ff7bb0;
   
 }
 
 
-
-/* Estilos para la sección "about-section" */
 #about-section {
   padding: 60px 0;
   background-color: #ffffff;
@@ -218,8 +185,8 @@ h1 {
 }
 
 .about-image {
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   border-radius: 100%;
   object-fit: cover;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -264,13 +231,11 @@ h1 {
   color: #fff;
 }
 
-/* Estilos para pantallas pequeñas */
 @media (max-width: 768px) {
   .about-content {
     flex-direction: column;
   }
 }
-
 
 
 #testimonials-section {
@@ -298,7 +263,7 @@ h1 {
   font-size: 60px;
   margin-bottom: 40px;
   font-family: 'Prata', serif;
-  color: #333;
+  color: #847f7f;
 }
 
 .testimonial-card {
@@ -352,25 +317,25 @@ h1 {
   color: #419ac0;
 }
 
-/* Estilos para dispositivos móviles y pantallas pequeñas */
+
 @media (max-width: 768px) {
   .testimonials-container {
-    padding: 20px; /* Reduce el espacio alrededor del contenedor */
+    padding: 20px; 
   }
 
   .testimonials-container h2 {
-    font-size: 40px; /* Reduce el tamaño del título */
-    margin-bottom: 20px; /* Reduce el espacio inferior del título */
+    font-size: 40px; 
+    margin-bottom: 20px; 
   }
 
   .testimonial-card {
-    margin-bottom: 30px; /* Reduce el espacio entre las tarjetas de testimonio */
+    margin-bottom: 30px; 
   }
 
   .testimonial-content {
-    max-width: 100%; /* Hace que el contenido se ajuste al ancho de la pantalla */
-    padding: 20px; /* Reduce el espacio interior de la tarjeta */
-    font-size: 16px; /* Reduce el tamaño del texto */
+    max-width: 100%; 
+    padding: 20px; 
+    font-size: 16px; 
   }
 }
 
@@ -384,7 +349,7 @@ h1 {
   font-size: 60px;
   margin-top: 60px;
   margin-bottom: 60px;
-  color: #333;
+  color: #847f7f;
   font-family: 'Prata', serif;
 }
 
@@ -469,7 +434,7 @@ h1 {
   cursor: pointer;
 }
 
-/* Estilos para dispositivos móviles */
+
 @media (max-width: 768px) {
   .service-container {
     flex-direction: column;
@@ -495,7 +460,7 @@ h1 {
 
   .service-text {
     position: absolute;
-    bottom: 0; /* Colocar el texto en la parte inferior */
+    bottom: 0; 
     left: 0;
     width: 100%;
     padding: 10px 0;
@@ -590,7 +555,7 @@ h1 {
   font-size: 60px;
   margin-bottom: 30px;
   font-family: 'Prata', serif;
-  color:#333
+  color:#847f7f
 
 }
 

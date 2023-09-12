@@ -1,33 +1,34 @@
 
-/* Estilos para pantallas pequeñas */
+
+body {
+  color: #ffffff;
+  font-family: 'Didact Gothic', sans-serif;
+  overflow-x: hidden;
+  margin:0%;
+  padding:0%;
+  right: 0%;
+  }
+
+
 @media (max-width: 768px) {
-  /* Evita el desplazamiento horizontal */
   body {
     overflow-x: hidden;
     margin: 0;
     padding: 0;
+    right: 0;
   }
 
-  /* Ajusta el ancho de la página al ancho del dispositivo */
   html, body {
     width: 100%;
     max-width: 100%;
-    margin: 0;
-    padding: 0;
   }
 
   header {
     position:absolute;
     justify-content: center;
   }
-  
-  #header-content{
-    justify-content: center;
-  }
-
 }
 
-/* Estilos para el header */
 header {
   position: fixed;
   top: 10px;
@@ -41,7 +42,6 @@ header {
   border-radius: 50px
 }
 
-/* Nuevo contenedor para el logo y el menú */
 #header-content {
   display: flex;
   justify-content: space-between;
@@ -52,8 +52,6 @@ header {
   height: 8000px;
 }
 
-
-/* Estilos para el contenedor del logo y el menú */
 #navbar {
   display: flex;
   align-items: center;
@@ -63,24 +61,20 @@ header {
   right: 0;
   width: 100%;
   transition: background-color 0.3s ease;
-  /* margin-right: 20px; */ /* Comenta esta línea */
-  z-index: 998; /* Agrega un índice z para que el logo esté encima del ribbon */
+  z-index: 998;
 }
 
-/* navegador estilos */
 #logo {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
-  /* Agrega un z-index para que el logo esté encima del ribbon */
   z-index: 999;
   height: 60px;
   width: 60px;
   margin-left: 0px;
-  border-radius: 50px
+  border-radius: 50px;
 }
 
-/* Estilos para pantallas pequeñas */
 @media (max-width: 768px) {
   .logo {
     order: -1; /* Cambia el orden para mover el logo a la izquierda */
@@ -88,13 +82,12 @@ header {
 }
 
 #logo img {
-  width: 200px; /* Ajusta el tamaño según tus necesidades */
+  width: 200px; 
   height: 60px;
-  margin-right: 10px; /* Ajusta el espaciado según tus necesidades */
-  border-radius: 50px
+  margin-right: 10px;
+  border-radius: 50px;
 }
 
-/* Estilos para el menú */
 #nav {
   display: flex;
   gap: 30px;
@@ -103,6 +96,7 @@ header {
   padding: 5px 10px;
   align-items: center;
   margin-left: 150px;
+  font-family: 'Didact Gothic', sans-serif;
 }
 
 #nav a {
@@ -120,13 +114,13 @@ header {
 }
 
 #nav a[href="conoceme.html"] {
-  white-space: nowrap; /* Evita el salto de línea */
+  white-space: nowrap; 
 }
 
 #nav a::before {
   content: ""; /* Agrega un pseudo-elemento */
   position: absolute;
-  bottom: -5px; /* Coloca el efecto debajo del texto */
+  bottom: -5px; 
   left: 0;
   width: 100%;
   height: 2px; /* Grosor del efecto */
@@ -140,12 +134,11 @@ header {
   transform: scaleX(1); /* Muestra el efecto al pasar el mouse */
 }
 
-/* Estilos para el menú hamburguesa */
 .menu-toggle {
   display: none;
   cursor: pointer;
-  font-size: 24px; /* Ajusta el tamaño del ícono */
-  color: white; /* Color del ícono */
+  font-size: 24px; 
+  color: white;
 }
 
 
@@ -165,17 +158,14 @@ header {
 }
 
 
-
-/* Estilos para el menú en pantallas pequeñas */
 @media (max-width: 768px) {
 
   #menu-toggle {
-    display: block; /* Mostrar en pantallas pequeñas */
-    
+    display: block; 
   }
   
   #nav {
-    display: none; /* Ocultar por defecto en pantallas pequeñas */
+    display: none;
   }
   
   #nav.active {
@@ -195,15 +185,12 @@ header {
   }
 }
 
-
-/* Estilos para el footer y la sección de enlaces rápidos */
 #quick-links-section {
   background: linear-gradient(to right, #b889b1, #f6ecec);
   padding: 50px;
   color: #333;
 }
 
-/* Estilos para dispositivos móviles */
 @media (max-width: 768px) {
   .quick-links-container {
     grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
@@ -234,7 +221,7 @@ header {
   }
 }
 
-/* Estilos para tablet y escritorio */
+
 @media (min-width: 769px) {
   .quick-links-container {
     display: grid; /* Usar grid para distribución en columnas */
@@ -244,20 +231,20 @@ header {
   }
 
   .column {
-    margin-bottom: 0; /* Eliminar margen inferior */
-    text-align: center; /* Centrar texto */
+    margin-bottom: 0; 
+    text-align: center; 
   }
 
   .contact-icons {
     display: flex;
     justify-content: center;
-    margin-top: 0; /* Eliminar espacio superior */
+    margin-top: 0; 
   }
 
   .contact-icons img {
     width: 30px;
     height: 30px;
-    margin-bottom: 10px; /* Agregar espacio inferior */
+    margin-bottom: 10px; 
   }
 }
 
@@ -278,7 +265,7 @@ header {
   font-size: 20px;
   font-weight: bold;
   margin: 0;
-  margin-bottom: 20px; /* Agregar espacio inferior al título */
+  margin-bottom: 20px; 
 }
 
 .column p {
@@ -308,16 +295,16 @@ header {
   text-decoration: none;
 }
 
-/* Estilos para el icono flotante */
+
 .icono-flotante {
   position: fixed;
-  bottom: 20px; /* Ajusta la distancia desde la parte inferior */
-  right: 20px; /* Ajusta la distancia desde la derecha */
-  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+  bottom: 20px; 
+  right: 20px; 
+  z-index: 1000;
 }
 
 .icono-flotante img {
-  width: 50px; /* Ajusta el tamaño del icono según tus preferencias */
+  width: 50px; 
   height: auto;
-  border: none; /* Elimina el borde si lo hubiera */
+  border: none; 
 }

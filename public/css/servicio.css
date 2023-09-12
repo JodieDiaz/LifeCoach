@@ -1,82 +1,49 @@
-/* Estilos generales */
-body {
-  overflow-x: hidden;
-  background-color: #ffffff;
-  color: #ffffff;
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  font-family: 'Prata', serif;
-}
-
-@media (max-width: 768px) {
-  
-  body {
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-  }
-
-  html, body {
-    width: 100%;
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-}
 
 #servicio-section {
   position: relative;
   overflow: hidden;
-  background-color: #ffffff; /* Puedes ajustar el color de fondo según tus preferencias */
-  padding: 80px 0; /* Aumenta el espacio superior e inferior para hacer la "cinta" más ancha */
+  background-color: #ffffff; 
+  padding: 80px 0; 
 }
 
 .header-container {
   position: relative;
   text-align: center;
-  color: #000000; /* Color de texto */
 }
 
 .header-container h1 {
-  font-size: 50px; /* Aumenta el tamaño de fuente del título */
+  font-size: 50px; 
   padding-top: 80px;
   font-weight: bold;
-  margin: 0; /* Elimina el margen para que el título esté encima de la imagen */
+  margin: 0; 
   position: relative;
-  z-index: 1; /* Coloca el título encima de la imagen */
+  z-index: 1; 
+  font-family: 'Prata', sans-serif;
+  color: #000;
 }
 
 
 .header-container img {
-  width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor (#servicio-section) */
-  height: auto; /* Hace que la altura se ajuste automáticamente para mantener la proporción */
-  max-height: 500px; /* Establece una altura máxima para la imagen en pantallas pequeñas */
+  width: 100%; 
+  height: auto; 
+  max-height: 500px; 
   position: absolute;
-  top: 0; /* Coloca la imagen en la parte superior del contenedor */
+  top: 0; 
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 0; /* Coloca la imagen detrás del título */
+  z-index: 0; 
 }
 
-/* Estilos para pantallas pequeñas */
 @media screen and (max-width: 768px) {
   .header-container img {
     max-height: none; /* Restaura la altura máxima en pantallas pequeñas */
   }
-}
-/* Estilos para pantallas pequeñas */
-@media screen and (max-width: 768px) {
   .header-container h1 {
-    font-size: 30px; /* Tamaño de fuente aún más pequeño en pantallas muy pequeñas */
-    padding-top: 10px; /* Espaciado superior más pequeño en pantallas muy pequeñas */
-  }
-  .header-container img {
-    max-height: none; /* Restaura la altura máxima en pantallas pequeñas */
+    font-size: 30px; 
+    padding-top: 10px; 
   }
 }
-
 
 .introduccion-container {
   display: flex;
@@ -98,12 +65,12 @@ body {
   font-size: 24px;
   font-style: italic;
   font-weight: bold;
-  color: black; /* Color de la cita en negro */
+  color: black; 
 }
 
 .cita-separador {
   flex: 0 0 1px; /* Establece el separador con un ancho fijo de 1px */
-  background-color: #0000; /* Color del separador en #333 (gris oscuro) */
+  background-color: #0000; 
   margin: 20px 0; /* Añade un poco de espacio vertical alrededor del separador */
 }
 
@@ -113,12 +80,11 @@ body {
   flex: 1; /* El texto ocupa todo el ancho en pantallas grandes */
   order: 2; /* Cambia el orden para que el texto vaya después de la cita */
   text-align: justify; /* Alinea el texto justificado */
-  color: #666; /* Color del texto en #333 (gris oscuro) */
+  color: #666; 
   padding: 0 20px; /* Añade un poco de espacio horizontal alrededor del texto */
   font-family: Arial, sans-serif;
 }
 
-/* Estilos para pantallas de escritorio */
 @media screen and (min-width: 769px) {
   .cita {
     max-width: 40%; /* Limita el ancho de la cita en pantallas grandes */
@@ -138,7 +104,6 @@ body {
   }
 }
 
-/* Estilos para pantallas pequeñas */
 @media screen and (max-width: 768px) {
   .introduccion-container {
     flex-direction: column; /* Cambia la dirección a columna en pantallas pequeñas */
@@ -146,22 +111,19 @@ body {
 
   .cita {
     text-align: center;
-    max-width: 100%; /* La cita ocupa todo el ancho en pantallas pequeñas */
-    order: 2; /* Cambia el orden para que la cita vaya después del texto en pantallas pequeñas */
-    margin-top: 20px; /* Agrega un margen superior para separar la cita del texto */
+    max-width: 100%; 
+    order: 2;
+    margin-top: 20px; 
   }
 
   .texto {
     text-align: justify;
-    max-width: 100%; /* El texto ocupa todo el ancho en pantallas pequeñas */
-    order: 1; /* Cambia el orden para que el texto vaya primero en el lado izquierdo en pantallas pequeñas */
+    max-width: 100%; 
+    order: 1;
   }
 }
 
 
-
-
-/* Estilos para la sección "Sesiones Personalizadas" */
 #sesiones-section {
   background-color: #ffffff;
   padding: 50px 0;
@@ -175,7 +137,7 @@ body {
 .sesiones-container h2 {
   font-size: 36px;
   font-weight: bold;
-  color: #333; /* Color del título en gris (#333) */
+  color: #847f7f; 
   text-align: center;
   margin-bottom: 30px;
 }
@@ -196,7 +158,7 @@ body {
   width: 50%;
   text-align: left;
   padding: 20px;
-  color: #666; /* Color del texto en gris (#666) */
+  color: #666; 
 }
 
 .sesion-texto h3 {
@@ -212,7 +174,6 @@ body {
   text-align: justify;
 }
 
-/* Estilos para pantallas de escritorio */
 @media screen and (min-width: 769px) {
   .sesion-info {
     flex-direction: row;
@@ -220,19 +181,19 @@ body {
   }
 
   .sesion-info img {
-    order: 1; /* Cambia el orden para que la imagen vaya primero en pantallas grandes */
+    order: 1; 
     width: 40%;
     max-height: 400px;
   }
 
   .sesion-texto {
-    order: 2; /* Cambia el orden para que el texto vaya después de la imagen en pantallas grandes */
+    order: 2; 
     width: 50%;
     text-align: left;
   }
 }
 
-/* Estilos para pantallas pequeñas */
+
 @media screen and (max-width: 768px) {
   .sesion-info {
     flex-direction: column;
@@ -250,8 +211,6 @@ body {
   }
 }
 
-
-/* Estilos para la sección "virtual" */
 #virtual-section {
   background-color: #ffffff;
   padding: 50px 0;
@@ -265,7 +224,7 @@ body {
 .virtual-container h2 {
   font-size: 36px;
   font-weight: bold;
-  color: #333; /* Color del título en gris (#333) */
+  color: #847f7f;
   text-align: center;
   margin-bottom: 30px;
 }
@@ -286,7 +245,7 @@ body {
   width: 50%;
   text-align: left;
   padding: 20px;
-  color: #666; /* Color del texto en gris (#666) */
+  color: #666;
 }
 
 .virtual-texto h3 {
@@ -299,9 +258,9 @@ body {
 .virtual-texto p {
   font-size: 16px;
   line-height: 1.5;
+  text-align: justify;
 }
 
-/* Estilos para pantallas de escritorio */
 @media screen and (min-width: 769px) {
   .virtual-info {
     flex-direction: row;
@@ -309,19 +268,18 @@ body {
   }
 
   .virtual-info img {
-    order: 1; /* Cambia el orden para que la imagen vaya primero en pantallas grandes */
+    order: 1; 
     width: 40%;
     max-height: 400px;
   }
 
   .virtual-texto {
-    order: 2; /* Cambia el orden para que el texto vaya después de la imagen en pantallas grandes */
+    order: 2; 
     width: 50%;
     text-align: left;
   }
 }
 
-/* Estilos para pantallas pequeñas */
 @media screen and (max-width: 768px) {
   .virtual-info {
     flex-direction: column;
@@ -340,8 +298,6 @@ body {
 }
 
 
-
-/* Estilos para la sección "idioma" */
 #idioma-section {
   background-color: #ffffff;
   padding: 50px 0;
@@ -355,7 +311,7 @@ body {
 .idioma-container h2 {
   font-size: 36px;
   font-weight: bold;
-  color: #333; /* Color del título en gris (#333) */
+  color: #847f7f; 
   text-align: center;
   margin-bottom: 30px;
 }
@@ -376,7 +332,8 @@ body {
   width: 50%;
   text-align: left;
   padding: 20px;
-  color: #666; /* Color del texto en gris (#666) */
+  color: #666; 
+  text-align: justify;
 }
 
 .idioma-texto h3 {
@@ -389,9 +346,10 @@ body {
 .idioma-texto p {
   font-size: 16px;
   line-height: 1.5;
+  text-align: justify;
 }
 
-/* Estilos para pantallas de escritorio */
+
 @media screen and (min-width: 769px) {
   .idioma-info {
     flex-direction: row;
@@ -399,19 +357,19 @@ body {
   }
 
   .idioma-info img {
-    order: 1; /* Cambia el orden para que la imagen vaya primero en pantallas grandes */
+    order: 1; 
     width: 40%;
     max-height: 400px;
   }
 
   .idioma-texto {
-    order: 2; /* Cambia el orden para que el texto vaya después de la imagen en pantallas grandes */
+    order: 2; 
     width: 50%;
     text-align: left;
   }
 }
 
-/* Estilos para pantallas pequeñas */
+
 @media screen and (max-width: 768px) {
   .idioma-info {
     flex-direction: column;
@@ -430,8 +388,6 @@ body {
 }
 
 
-
-/* Estilos para la sección "Adquirir" */
 #adquirir-section {
   background-color: #f7f7f7;
   padding: 50px 0;
@@ -446,7 +402,7 @@ body {
 .adquirir-container h2 {
   font-size: 36px;
   font-weight: bold;
-  color: #333; /* Color del título en gris (#333) */
+  color: #847f7f; 
   margin-bottom: 30px;
 }
 
