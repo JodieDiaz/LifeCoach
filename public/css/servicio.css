@@ -41,7 +41,8 @@
   }
   .header-container h1 {
     font-size: 30px; 
-    padding-top: 10px; 
+    padding-top: 80px; 
+    color: #f7f7f7;
   }
 }
 
