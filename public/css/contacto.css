@@ -65,6 +65,7 @@
     height: auto; /* Mantener la proporción original de la imagen */
     margin: 0; /* Eliminar márgenes */
     left: 0;
+    overflow-x: hidden;
   }
 }
 
