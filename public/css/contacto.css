@@ -1,6 +1,7 @@
 
 .banner-container {
   position: relative;
+  justify-content: center;
   width: 100%;
   height: 350px;
   overflow: hidden;
@@ -53,7 +54,7 @@
 
   iframe[src*="https://docs.google.com/forms/d/e/1FAIpQLSdrtqVduEJpvn4aFxlmfqICpfeu4eWVq6cbLXZdmP6IPkxOMA/viewform?embedded=true"] 
   {
-    width: 40%;
+    width: 20%;
     height: auto; 
   }
 }
