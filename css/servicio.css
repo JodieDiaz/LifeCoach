@@ -1,0 +1,161 @@
+.header-container {
+  background: url('/img/mountains-service copia.png');
+}
+
+.header-container h1 {
+  padding: 100px 0;
+  font-size: 50px; /* Aumenta el tamaño de fuente del título */
+  text-align: center;
+  color: #000000; /* Color de texto */
+  margin: 0;
+  padding-top: 180px;
+}
+
+.introduccion-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.cita {
+  flex: 1; /* La cita ocupa todo el ancho en pantallas grandes */
+  text-align: center; /* Alinea el texto de la cita al centro */
+  padding: 0 20px; /* Añade un poco de espacio horizontal alrededor de la cita */
+}
+
+.cita-texto {
+  font-size: 24px;
+  font-style: italic;
+  font-weight: bold;
+  color: black; /* Color de la cita en negro */
+}
+
+.cita-separador {
+  flex: 0 0 1px; /* Establece el separador con un ancho fijo de 1px */
+  background-color: #0000; /* Color del separador en #333 (gris oscuro) */
+  margin: 20px 0; /* Añade un poco de espacio vertical alrededor del separador */
+}
+
+.introduccion-section-texto {
+  margin-top: 40px;
+  flex: 1; /* El texto ocupa todo el ancho en pantallas grandes */
+  text-align: justify; /* Alinea el texto justificado */
+  color: #333; /* Color del texto en #333 (gris oscuro) */
+  padding: 0 20px; /* Añade un poco de espacio horizontal alrededor del texto */
+  max-width: 60%; /* Limita el ancho del texto en pantallas grandes */
+}
+
+.cita {
+  max-width: 40%; /* Limita el ancho de la cita en pantallas grandes */
+}
+
+.cita-texto {
+  text-align: center; /* Centra el texto de la cita en pantallas grandes */
+}
+
+.cita-separador {
+  display: block; /* Muestra el separador en pantallas grandes */
+}
+
+
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+  .introduccion-container {
+    flex-direction: column; /* Cambia la dirección a columna en pantallas pequeñas */
+  }
+
+  .cita {
+    text-align: center;
+    max-width: 100%; /* La cita ocupa todo el ancho en pantallas pequeñas */
+    margin-top: 20px; /* Agrega un margen superior para separar la cita del texto */
+  }
+
+  .introduccion-section-texto {
+    text-align: justify;
+    max-width: 100%; /* El texto ocupa todo el ancho en pantallas pequeñas */
+  }
+}
+
+
+
+
+/* Generic side-by-side container */
+.midsection {
+  margin-bottom: 5em;
+}
+.midsection section {
+  padding: 0;
+}
+.midsection-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1em 2.5em;
+}
+.midsection h2 {
+  font-size: 36px;
+  color: #333; /* Color del título en gris (#333) */
+  text-align: center;
+}
+.midsection h3 {
+  font-size: 24px;
+  color:#b889b1
+}
+.midsection img {
+  max-height: 300px;
+  object-fit: cover;
+}
+.midsection p {
+  text-align: justify;
+  color: #333;
+}
+.midsection-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2em;
+}
+.midsection-info img {
+  width: 50%;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+  .midsection p {
+    text-align: center;
+    max-width: 400px;
+  }
+  .midsection h3 {
+    text-align: center;
+  }
+  .midsection img {
+    width: 80%;
+  }
+  .midsection-info {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
+/* Estilos para la sección "Adquirir" */
+#adquirir-section {
+  background-color: #f7f7f7;
+  padding: 50px 0;
+}
+
+.adquirir-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.adquirir-container h2 {
+  font-size: 36px;
+  color: #333; /* Color del título en gris (#333) */
+  margin-bottom: 30px;
+}

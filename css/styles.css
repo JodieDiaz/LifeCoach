@@ -1,0 +1,292 @@
+/* This file contains shared styles, common for all pages */
+
+body {
+  background-color: #ffffff;
+  color: #ffffff;
+  /* This is the main font ofthe page */
+  font-family: 'Didact Gothic', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/*** HEADER ****/
+/* Estilos para el header */
+header {
+  position: fixed;
+  top: 10px;
+  left: 0;
+  right: 0;
+  width: calc(100% - 80px);
+  z-index: 999;
+  background-color: rgb(184, 137, 177);
+  height: 60px;
+  border-radius: 50px;
+  margin: auto;
+  max-width: 1000px;
+}
+
+/* Disabled: with the transparency, the contrast between background and text
+  was too low; it was too difficult to read especially when scrolled over some text.
+header.scrolled {
+    background-color: rgba(184, 137, 177, 0.8); 
+}
+*/
+
+/* Nuevo contenedor para el logo y el menú */
+#header-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  transition: background-color 0.3s ease;
+}
+
+/* navegador estilos */
+#logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* Agrega un z-index para que el logo esté encima del ribbon */
+  z-index: 999;
+}
+
+#logo img.logo {
+  width: 200px; /* Ajusta el tamaño según tus necesidades */
+  border-radius: 50px
+}
+
+/* Estilos para el menú */
+#nav {
+  display: flex;
+  justify-content: space-between;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+  line-height: 60px;
+  /* padding: 5px 10px; */
+  /* margin-left: 150px; */
+}
+
+#nav a {
+  color: white;
+  display: inline-block; 
+  margin-right: 1.5em;
+  text-decoration: none; 
+  position: relative;
+  transition: color 0.3s ease; 
+  font-size: 20px;
+  line-height: 20px;
+}
+
+#nav a[href="conoceme.html"] {
+  white-space: nowrap; /* Evita el salto de línea */
+}
+
+#nav a::before {
+  content: ""; /* Agrega un pseudo-elemento */
+  position: absolute;
+  bottom: 0px; /* Coloca el efecto debajo del texto */
+  left: 0;
+  width: 100%;
+  height: 2px; /* Grosor del efecto */
+  background-color: white; /* Color del efecto */
+  transform: scaleX(0); /* Inicialmente oculto */
+  transform-origin: left; /* Inicia el efecto desde la izquierda */
+  transition: transform 0.3s ease;
+}
+
+#nav a:hover::before {
+  transform: scaleX(1); /* Muestra el efecto al pasar el mouse */
+}
+
+#menu-toggle {
+  display: none;
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+/* Estilos para el menú en pantallas pequeñas */
+@media (max-width: 845px) {
+  #menu-toggle {
+    display: block; /* Mostrar en pantallas pequeñas */
+  }
+
+  #nav {
+    display: none; /* Ocultar por defecto en pantallas pequeñas */
+  }
+
+  #nav.active {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(184, 137, 177);
+    position:absolute;
+    top: 65px;
+    right: 0px;
+    width: 200px;
+    padding: 15px;
+    border-radius: 30px;
+    z-index: 1000;
+  }
+  #nav a {
+    padding: 10px;
+  }
+}
+/*** END OF HEADER ****/
+
+
+/*** FOOTER ****/
+/* Estilos para el footer y la sección de enlaces rápidos */
+#quick-links-section {
+  background: linear-gradient(to right, #b889b1, #f6ecec);
+  padding: 50px;
+  color: #333;
+}
+
+.column img.logo-image {
+  width: 200px;
+  height: initial;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+  .quick-links-container {
+    grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+    text-align: center;
+  }
+
+  .column {
+    margin-bottom: 20px;
+    padding: 0 20px; /* Añadir espacio lateral */
+    text-align: center; /* Centrar texto */
+  }
+
+  .contact-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Añadir espacio superior */
+  }
+
+  .contact-icons img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* Estilos para tablet y escritorio */
+@media (min-width: 769px) {
+  .quick-links-container {
+    display: grid; /* Usar grid para distribución en columnas */
+    grid-template-columns: repeat(4, 1fr); /* Cuatro columnas en tablet y escritorio */
+    gap: 30px;
+    align-items: flex-start; /* Centrar contenido verticalmente */
+  }
+
+  .column {
+    margin-bottom: 0; /* Eliminar margen inferior */
+    text-align: center; /* Centrar texto */
+  }
+
+  .contact-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 0; /* Eliminar espacio superior */
+  }
+
+  .contact-icons img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px; /* Agregar espacio inferior */
+  }
+}
+/*** END OF FOOTER ****/
+
+
+/*** STYLED BUTTON ****/
+/* Estilos para el botón */
+.styled-button {
+  margin: 60px auto;
+  background-color: #b889b1;
+  color: #ffffff;
+  padding: 20px 30px; /* Aumentar el tamaño del botón */
+  border: none;
+  border-radius: 50px; /* Hacer el borde ovalado */
+  font-size: 20px;
+  line-height: 20px;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* Efecto 3D en hover */
+.styled-button:hover {
+  transform: scale(1.05); /* Aumentar el tamaño al pasar el mouse */
+  background-color: #ff7bb0;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0.3, 0.3); /* Eleva el botón en hover */
+}
+
+/* Estilos para el enlace dentro del botón */
+.button-link {
+  text-decoration: none; /* Elimina el subrayado */
+  color: inherit; /* Hereda el color del texto del botón */
+}
+/*** END OF STYLED BUTTON ****/
+
+
+
+
+
+
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.column img {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+}
+
+.column h4 {
+  font-size: 20px;
+  margin: 0;
+  margin-bottom: 20px; /* Agregar espacio inferior al título */
+}
+
+.column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.column li {
+  margin: 1em 0;
+}
+
+.column a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.column a:hover {
+  color: #ff7bb0;
+}
+
+
+
+
+
+
+/* Estilos para el icono flotante */
+.icono-flotante {
+  position: fixed;
+  bottom: 20px; /* Ajusta la distancia desde la parte inferior */
+  right: 20px; /* Ajusta la distancia desde la derecha */
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+.icono-flotante img {
+  width: 50px; /* Ajusta el tamaño del icono según tus preferencias */
+  height: auto;
+  border: none; /* Elimina el borde si lo hubiera */
+}

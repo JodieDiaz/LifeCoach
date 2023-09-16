@@ -2,8 +2,9 @@
   "name": "rlifecoach",
   "version": "1.0.0",
   "description": "Página web de servicios",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
+    "start": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
