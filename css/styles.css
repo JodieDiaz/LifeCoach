@@ -25,13 +25,6 @@ header {
   max-width: 1000px;
 }
 
-/* Disabled: with the transparency, the contrast between background and text
-  was too low; it was too difficult to read especially when scrolled over some text.
-header.scrolled {
-    background-color: rgba(184, 137, 177, 0.8); 
-}
-*/
-
 /* Nuevo contenedor para el logo y el menú */
 #header-content {
   display: flex;
@@ -45,12 +38,11 @@ header.scrolled {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* Agrega un z-index para que el logo esté encima del ribbon */
   z-index: 999;
 }
 
 #logo img.logo {
-  width: 200px; /* Ajusta el tamaño según tus necesidades */
+  width: 200px; 
   border-radius: 50px
 }
 
@@ -61,8 +53,6 @@ header.scrolled {
   letter-spacing: 1.5px;
   text-decoration: none;
   line-height: 60px;
-  /* padding: 5px 10px; */
-  /* margin-left: 150px; */
 }
 
 #nav a {
@@ -87,7 +77,7 @@ header.scrolled {
   left: 0;
   width: 100%;
   height: 2px; /* Grosor del efecto */
-  background-color: white; /* Color del efecto */
+  background-color: #ff7bb0; /* Color del efecto */
   transform: scaleX(0); /* Inicialmente oculto */
   transform-origin: left; /* Inicia el efecto desde la izquierda */
   transition: transform 0.3s ease;
@@ -145,6 +135,10 @@ header.scrolled {
   height: initial;
 }
 
+.column.centered-text p {
+  font-style: italic;
+}
+
 /* Estilos para dispositivos móviles */
 @media (max-width: 768px) {
   .quick-links-container {
@@ -154,8 +148,8 @@ header.scrolled {
 
   .column {
     margin-bottom: 20px;
-    padding: 0 20px; /* Añadir espacio lateral */
-    text-align: center; /* Centrar texto */
+    padding: 0 20px; 
+    text-align: center; 
   }
 
   .contact-icons {
@@ -180,20 +174,20 @@ header.scrolled {
   }
 
   .column {
-    margin-bottom: 0; /* Eliminar margen inferior */
-    text-align: center; /* Centrar texto */
+    margin-bottom: 0; 
+    text-align: center;
   }
 
   .contact-icons {
     display: flex;
     justify-content: center;
-    margin-top: 0; /* Eliminar espacio superior */
+    margin-top: 0; 
   }
 
   .contact-icons img {
     width: 30px;
     height: 30px;
-    margin-bottom: 10px; /* Agregar espacio inferior */
+    margin-bottom: 10px; 
   }
 }
 /*** END OF FOOTER ****/
@@ -207,7 +201,7 @@ header.scrolled {
   color: #ffffff;
   padding: 20px 30px; /* Aumentar el tamaño del botón */
   border: none;
-  border-radius: 50px; /* Hacer el borde ovalado */
+  border-radius: 50px; 
   font-size: 20px;
   line-height: 20px;
   transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
@@ -246,10 +240,15 @@ header.scrolled {
   margin-right: 20px;
 }
 
+.column img:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); 
+}
+
 .column h4 {
   font-size: 20px;
   margin: 0;
-  margin-bottom: 20px; /* Agregar espacio inferior al título */
+  margin-bottom: 20px; 
 }
 
 .column ul {
@@ -273,20 +272,21 @@ header.scrolled {
 }
 
 
-
-
-
-
 /* Estilos para el icono flotante */
 .icono-flotante {
   position: fixed;
-  bottom: 20px; /* Ajusta la distancia desde la parte inferior */
-  right: 20px; /* Ajusta la distancia desde la derecha */
-  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+  bottom: 20px; 
+  right: 20px; 
+  z-index: 1000; 
 }
 
 .icono-flotante img {
-  width: 50px; /* Ajusta el tamaño del icono según tus preferencias */
+  width: 50px; 
   height: auto;
-  border: none; /* Elimina el borde si lo hubiera */
+  border: none; 
+}
+
+.icono-flotante:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); 
 }

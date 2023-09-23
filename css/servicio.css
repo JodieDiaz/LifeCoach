@@ -1,14 +1,23 @@
 .header-container {
-  background: url('../img/mountains-service copia.png');
+  background: url('../img/mountains-service copia.webp');
 }
 
 .header-container h1 {
   padding: 100px 0;
   font-size: 50px; /* Aumenta el tamaño de fuente del título */
   text-align: center;
-  color: #000000; /* Color de texto */
+  color: #ffff; 
   margin: 0;
   padding-top: 180px;
+  font-family: 'Prata';
+}
+
+@media screen and (max-width: 768px) {
+  .header-container h1 {
+    font-size: 30px; 
+    padding-top: 170px;
+    color: #f7f7f7;
+  }
 }
 
 .introduccion-container {
@@ -22,8 +31,8 @@
 
 .cita {
   flex: 1; /* La cita ocupa todo el ancho en pantallas grandes */
-  text-align: center; /* Alinea el texto de la cita al centro */
-  padding: 0 20px; /* Añade un poco de espacio horizontal alrededor de la cita */
+  text-align: center; 
+  padding: 0 20px; 
 }
 
 .cita-texto {
@@ -81,7 +90,6 @@
 
 
 
-
 /* Generic side-by-side container */
 .midsection {
   margin-bottom: 5em;
@@ -96,7 +104,7 @@
 }
 .midsection h2 {
   font-size: 36px;
-  color: #333; /* Color del título en gris (#333) */
+  color: #333; 
   text-align: center;
 }
 .midsection h3 {
@@ -122,10 +130,12 @@
   flex-grow: 0;
   flex-shrink: 0;
 }
+
 /* Estilos para pantallas pequeñas */
 @media screen and (max-width: 768px) {
+  
   .midsection p {
-    text-align: center;
+    text-align: justify;
     max-width: 400px;
   }
   .midsection h3 {
@@ -156,6 +166,6 @@
 
 .adquirir-container h2 {
   font-size: 36px;
-  color: #333; /* Color del título en gris (#333) */
+  color: #333; 
   margin-bottom: 30px;
 }
