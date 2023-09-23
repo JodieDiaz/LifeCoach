@@ -3,7 +3,7 @@ const app = express()
 
 app.use(express.static(__dirname))
 
-const PORT = 3000
+const PORT = 8080
 app.listen(PORT, () => {
   console.log(`Servidor en ejecución en http://localhost:${PORT}`)
 })
