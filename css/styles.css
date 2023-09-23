@@ -1,16 +1,32 @@
 /* This file contains shared styles, common for all pages */
 
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 300;
+  src: url('https://fonts.gstatic.com/s/quicksand/v28/6xKtdSZaM9iE8KbpRA_LJ3z8mH9BOJvgkPvKe45c0A0.woff2') format('woff2');
+  font-display: swap; 
+}
+
+@font-face {
+  font-family: 'Dancing Script';
+  font-style: normal;
+  font-weight: 500;
+  src: url('https://fonts.gstatic.com/s/dancingscript/v12/If2RXTr6YS-zF4S-kcSWSViSwA.woff2') format('woff2');
+  font-display: swap;
+}
+
 body {
   background-color: #ffffff;
   color: #ffffff;
   /* This is the main font ofthe page */
-  font-family: 'Didact Gothic', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   margin: 0;
   padding: 0;
+  top:0;
 }
 
 /*** HEADER ****/
-/* Estilos para el header */
 header {
   position: fixed;
   top: 10px;
@@ -43,6 +59,7 @@ header {
 
 #logo img.logo {
   width: 200px; 
+  height: 60px;
   border-radius: 50px
 }
 
@@ -62,7 +79,7 @@ header {
   text-decoration: none; 
   position: relative;
   transition: color 0.3s ease; 
-  font-size: 20px;
+  font-size: 17px;
   line-height: 20px;
 }
 
@@ -91,12 +108,16 @@ header {
   display: none;
   cursor: pointer;
   margin-right: 30px;
+  width: 20px;
+  height: 40px;
 }
 
 /* Estilos para el menú en pantallas pequeñas */
 @media (max-width: 845px) {
   #menu-toggle {
     display: block; /* Mostrar en pantallas pequeñas */
+    width: 20px;
+    height: 40px;
   }
 
   #nav {
@@ -123,7 +144,6 @@ header {
 
 
 /*** FOOTER ****/
-/* Estilos para el footer y la sección de enlaces rápidos */
 #quick-links-section {
   background: linear-gradient(to right, #b889b1, #f6ecec);
   padding: 50px;
@@ -194,7 +214,6 @@ header {
 
 
 /*** STYLED BUTTON ****/
-/* Estilos para el botón */
 .styled-button {
   margin: 60px auto;
   background-color: #b889b1;
@@ -220,12 +239,6 @@ header {
   color: inherit; /* Hereda el color del texto del botón */
 }
 /*** END OF STYLED BUTTON ****/
-
-
-
-
-
-
 
 .column {
   display: flex;
@@ -271,7 +284,6 @@ header {
   color: #ff7bb0;
 }
 
-
 /* Estilos para el icono flotante */
 .icono-flotante {
   position: fixed;
@@ -282,7 +294,7 @@ header {
 
 .icono-flotante img {
   width: 50px; 
-  height: auto;
+  height: 50px;
   border: none; 
 }
 

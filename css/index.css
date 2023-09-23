@@ -8,6 +8,8 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+  margin:0;
+  top:0%;
   background-size: cover;
   transition: background-position 0.3s ease; 
 }
@@ -34,18 +36,28 @@
   margin-top: 60px;
   font-size: 60px;
   margin-bottom: 60px;
-  font-family: 'Prata', serif;
 }
 
 #hero-section p {
   line-height: 1.5;
   font-size: 24px;
   margin: 20px;
+  font-style: italic;
   
 }
 
+/* Estilos para pantallas pequeñas (menos de 768px de ancho) */
+@media screen and (max-width: 900px) {
+  #hero-section h1 {
+    font-size: 34px; /* Tamaño de fuente deseado para pantallas pequeñas */
+  }
+#hero-section p {
+  font-size: 15px;
+}
+}
+
 #questions-section {
-  background-image: linear-gradient(#1b1717b9,#04040498),url('../img/dafne  atardecer.webp');
+  background-image: linear-gradient(#1b1717c5,#040404aa),url('../img/dafne  atardecer.webp');
   background-size: cover;
   padding:1em;
   margin: 2em auto;
@@ -77,7 +89,7 @@
 
 #questions-section li {
   margin: 25px auto;
-  font-weight: bold;
+  font-weight:lighter;
   color: #fff;
 }
 
@@ -171,7 +183,6 @@
 .testimonials-container h2 {
   font-size: 60px;
   margin-bottom: 40px;
-  font-family: 'Prata', serif;
 }
 
 .testimonial-card {
@@ -206,7 +217,7 @@
 /* Estilos para dispositivos móviles y pantallas pequeñas */
 @media (max-width: 768px) {
   .testimonials-container h2 {
-    font-size: 40px; 
+    font-size: 30px; 
     margin-bottom: 20px; 
   }
 
@@ -225,7 +236,6 @@
   margin-top: 60px;
   margin-bottom: 60px;
   color: #333;
-  font-family: 'Prata', serif;
 }
 
 .service-container {
@@ -238,9 +248,9 @@
 
 .service-panel {
   flex: 1;
-  margin: 0 10px;
+  margin: 0 15px;
   background-color: rgba(255, 255, 255, 0.8);
-  padding: 10px;
+  padding: 20px;
   border-radius: 8px;
   transition: transform 0.3s ease;
   overflow: hidden;
@@ -295,9 +305,17 @@
 .service-link {
   display: block;
   margin-top: 10px;
-  font-style: italic;
+  font-style:inherit;
   color: #ff7bb0;
+  text-decoration:none;
+  transition: color 0.3s ease, box-shadow 0.3s ease; /* Transición de color y sombreado */
 }
+
+.service-link:hover {
+  color: #ff3366;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombreado al pasar el ratón */
+}
+
 
 /* Estilos para dispositivos móviles */
 @media (max-width: 768px) {
@@ -311,6 +329,11 @@
     flex-basis: 100%;
     transform: none;
   }
+
+  .service-title {
+  font-size: 34px;
+
+}
 
   .service-image {
     padding-bottom: 0;
@@ -374,5 +397,5 @@
 
 .citas-content h2 {
   font-size: 60px;
-  font-family: 'Prata', serif;
+  
 }

@@ -10,7 +10,12 @@
   color: #333;
   text-align: center;
   margin-bottom: 10px;
-  font-family: 'Prata', serif;
+}
+
+@media screen and (max-width: 768px) {
+  .conoceme-title {
+  font-size: 34px;
+}
 }
 
 /* Estilos para la sección "Experiencia de Dafne" */
@@ -19,8 +24,8 @@
   color: #333;
   padding: 50px;
   display: flex;
-  justify-content: center; /* Centra horizontalmente en la pantalla */
-  align-items: center; /* Centra verticalmente en la pantalla */
+  justify-content: center; 
+  align-items: center; 
   text-align: center;
 }
 
@@ -31,8 +36,8 @@
 }
 
 .experiencia-container {
-  max-width: 1000px; /* Establece un ancho máximo para el contenido */
-  display: flex; /* Utiliza flexbox para crear dos columnas */
+  max-width: 1000px;
+  display: flex; 
   justify-content: space-between; /* Espacio entre las dos columnas */
   align-items: center; /* Centra verticalmente en las dos columnas */
 }
@@ -56,16 +61,14 @@
 .introduccion h3 {
   font-size: 24px;
   margin-bottom: 10px;
-  font-family: 'Prata', serif;
 }
 /* Estilos para pantallas pequeñas */
 @media (max-width: 768px) {
   .introduccion h3 {
     font-size: 24px;
     margin-bottom: 10px;
-    font-family: 'Prata', serif;
-    text-align: center; /* Centra el texto horizontalmente */
-    letter-spacing: 1px; /* Ajusta el espaciado entre letras según tus preferencias */
+    text-align: center; 
+    letter-spacing: 1px;
   }
 }
 
@@ -85,12 +88,10 @@
   }
 
   .foto-dafne {
-    margin-right: 0; /* Elimina el margen derecho en pantallas pequeñas */
-    margin-bottom: 20px; /* Añade margen inferior entre la foto y el texto */
+    margin-right: 0; 
+    margin-bottom: 20px;
   }
 }
-
-
 
 /* Estilos para la sección "Mi historia" */
 #mi-historia-section {
@@ -108,7 +109,6 @@
 
 .mi-historia-title {
   padding: 10px 20px;
-  font-family: 'Prata', serif;
 }
 
 .mi-historia-title h2 {
@@ -126,4 +126,10 @@
   background-color: rgba(255, 255, 255, 0.9);
   color: #333;
   text-align: justify;
+}
+
+@media screen and (max-width: 768px) {
+ .mi-historia-title h2 {
+  font-size: 34px;
+}
 }
