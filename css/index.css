@@ -9,7 +9,7 @@
   position: relative;
   overflow: hidden;
   background-size: cover;
-  transition: background-position 0.3s ease; /* Agrega transición para suavizar el efecto */
+  transition: background-position 0.3s ease; 
 }
 
 .parallax-bg {
@@ -19,15 +19,15 @@
   width: 100%;
   height: 100%;
   z-index: -1;
-  background-image: url('../img/Migrante en Finlandia.png');
+  background-image: url('../img/Migrante en Finlandia.webp');
   background-size: cover;
   background-position: center 25%;
-  transition: transform 0.1s ease; /* Agregar transición para un efecto suave */
+  transition: transform 0.1s ease; 
 }
 
 #hero-section .parallax-bg {
   /* Increased contrast between text and background */
-  filter:brightness(0.3);
+  filter:brightness(0.6);
 }
 
 #hero-section h1 {
@@ -38,11 +38,14 @@
 }
 
 #hero-section p {
+  line-height: 1.5;
   font-size: 24px;
+  margin: 20px;
+  
 }
 
 #questions-section {
-  background-color: #30021D;
+  background-image: linear-gradient(#1b1717b9,#04040498),url('../img/dafne  atardecer.webp');
   background-size: cover;
   padding:1em;
   margin: 2em auto;
@@ -155,7 +158,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(#000000cc,#000000cc), url('../img/flores dafne.jpg');
+  background-image: linear-gradient(#1b17178a,#04040498), url('../img/flores dafne.webp');
   background-size: cover;
   z-index: -1;
 }
@@ -203,12 +206,12 @@
 /* Estilos para dispositivos móviles y pantallas pequeñas */
 @media (max-width: 768px) {
   .testimonials-container h2 {
-    font-size: 40px; /* Reduce el tamaño del título */
-    margin-bottom: 20px; /* Reduce el espacio inferior del título */
+    font-size: 40px; 
+    margin-bottom: 20px; 
   }
 
   .testimonial-card {
-    margin-bottom: 30px; /* Reduce el espacio entre las tarjetas de testimonio */
+    margin-bottom: 30px; 
   }
 }
 
@@ -349,7 +352,7 @@
 #citas-section {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(#FFFFFFAA, #FFFFFFAA), url('../img/Agenda.png');
+  background: linear-gradient(#ffffff6f, #ffffff5b), url('../img/Agenda.webp');
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -362,7 +365,7 @@
   max-width: 800px;
   align-items: center;
   justify-content: space-around;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.79);
   padding: 20px;
   border-radius: 8px;
   margin: 80px auto;
