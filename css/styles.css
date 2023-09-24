@@ -24,6 +24,7 @@ body {
   margin: 0;
   padding: 0;
   top:0;
+  right:0;
   overflow-x: hidden;
 }
 
@@ -39,7 +40,6 @@ header {
   height: 60px;
   border-radius: 50px;
   margin: auto;
-  max-width: 1000px;
 }
 
 /* Nuevo contenedor para el logo y el menú */
@@ -49,7 +49,7 @@ header {
   padding: 20px;
   transition: background-color 0.3s ease;
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1000px;
 }
 @media screen and (max-width: 768px){
 #header-content{
@@ -296,7 +296,7 @@ header {
 .icono-flotante {
   position: fixed;
   bottom: 30px; 
-  right: 30px; 
+  right: 25px; 
   z-index: 1000; 
 }
 
