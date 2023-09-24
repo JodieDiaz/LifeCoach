@@ -58,43 +58,6 @@
  }
 }
 
-#questions-section {
-  background-image: linear-gradient(#1b1717c5,#040404aa),url('../img/dafne  atardecer.webp');
-  background-size: cover;
-  padding:1em;
-  margin: 2em auto;
-}
-#questions-section h2 {
-  text-align:center;
-  margin: 1.5em auto;
-}
-#questions-section .wrapper {
-  display: flex;
-  justify-content: center;
-  gap: 4em;
-}
-@media screen and (max-width: 500px) {
-  #questions-section .wrapper {
-    display: block;
-  }
-}
-#questions-section .wrapper > ul {
-  flex-basis: 300px;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-#questions-section button {
-  margin: 2em auto;
-  display: block;
-}
-
-#questions-section li {
-  margin: 25px auto;
-  font-weight:lighter;
-  color: #fff;
-}
-
 /* Estilos para la sección "about-section" */
 #about-section {
   padding: 60px 0;
@@ -160,74 +123,45 @@
     flex-direction: column;
   }
 }
-
-#testimonials-section {
-  position: relative;
-  overflow: hidden;
-}
-
-.testimonials-background-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(#1b17178a,#04040498), url('../img/flores dafne.webp');
+/* Estilos para questions section*/
+#questions-section {
+  background-image: linear-gradient(#1b1717c5,#040404aa),url('../img/dafne  atardecer.webp');
   background-size: cover;
-  z-index: -1;
+  padding:1em;
+  margin: 2em auto;
 }
-
-.testimonials-container {
-  padding: 50px;
-  text-align: center;
+#questions-section h2 {
+  text-align:center;
+  margin: 1.5em auto;
 }
-
-.testimonials-container h2 {
-  font-size: 60px;
-  margin-bottom: 40px;
+#questions-section .wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 4em;
 }
-
-.testimonial-card {
-  position: relative;
-  margin-bottom: 50px;
-}
-
-.testimonial-content {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 40px;
-  border-radius: 8px;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.9);
-}
-
-.testimonial-content p {
-  text-align: justify;
-  color:#333;
-}
-
-.testimonial-info {
-  margin-top: 20px;
-}
-
-.testimonial-name {
-  font-weight: bold;
-  font-style: italic;
-  color: #419ac0;
-}
-
-/* Estilos para dispositivos móviles y pantallas pequeñas */
-@media (max-width: 768px) {
-  .testimonials-container h2 {
-    font-size: 30px; 
-    margin-bottom: 20px; 
-  }
-
-  .testimonial-card {
-    margin-bottom: 30px; 
+@media screen and (max-width: 500px) {
+  #questions-section .wrapper {
+    display: block;
   }
 }
+#questions-section .wrapper > ul {
+  flex-basis: 300px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+#questions-section button {
+  margin: 2em auto;
+  display: block;
+}
 
+#questions-section li {
+  margin: 25px auto;
+  font-weight:lighter;
+  color: #fff;
+}
+
+/* Estilos para service section*/
 #service-section {
   text-align: center;
   margin-bottom: 20px;
@@ -252,7 +186,7 @@
   flex: 1;
   margin: 0 15px;
   background-color: rgba(255, 255, 255, 0.8);
-  padding: 20px;
+  padding: 10px;
   border-radius: 8px;
   transition: transform 0.3s ease;
   overflow: hidden;
@@ -327,7 +261,9 @@
   }
 
   .service-panel {
-    margin: 10px 0;
+    margin: 15px 0;
+    padding: 0px;
+    overflow: hidden;
     flex-basis: 100%;
     transform: none;
   }
@@ -339,8 +275,8 @@
 
   .service-image {
     padding-bottom: 0;
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
   }
 
   .service-image img {
@@ -371,6 +307,74 @@
   margin: 10px 0;
   flex-basis: 100%; /* Ocupar todo el ancho en una columna */
 }
+
+#testimonials-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonials-background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(#1b17178a,#04040498), url('../img/flores dafne.webp');
+  background-size: cover;
+  z-index: -1;
+}
+
+.testimonials-container {
+  padding: 50px;
+  text-align: center;
+}
+
+.testimonials-container h2 {
+  font-size: 60px;
+  margin-bottom: 40px;
+}
+
+.testimonial-card {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.testimonial-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 8px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.testimonial-content p {
+  text-align: justify;
+  color:#333;
+}
+
+.testimonial-info {
+  margin-top: 20px;
+}
+
+.testimonial-name {
+  font-weight: bold;
+  font-style: italic;
+  color: #419ac0;
+}
+
+/* Estilos para dispositivos móviles y pantallas pequeñas */
+@media (max-width: 768px) {
+  .testimonials-container h2 {
+    font-size: 30px; 
+    margin-bottom: 20px; 
+  }
+
+  .testimonial-card {
+    margin-bottom: 30px; 
+  }
+}
+
 
 
 
