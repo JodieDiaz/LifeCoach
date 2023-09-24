@@ -30,7 +30,7 @@ body {
 header {
   position: fixed;
   top: 10px;
-  left: 0;
+  left: 20px;
   right: 0;
   width: calc(100% - 80px);
   z-index: 999;
@@ -47,6 +47,15 @@ header {
   justify-content: space-between;
   padding: 20px;
   transition: background-color 0.3s ease;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* Media query para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+  #header-content {
+    flex-direction: column; /* Cambiar a dirección de columna en pantallas pequeñas si es necesario */
+  }
 }
 
 /* navegador estilos */
@@ -135,7 +144,6 @@ header {
     padding: 15px;
     border-radius: 30px;
     z-index: 1000;
-    margin: 65px auto 0;
   }
   #nav a {
     padding: 10px;
@@ -304,4 +312,12 @@ header {
 .icono-flotante:hover {
   transform: translateY(-5px); 
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); 
+}
+
+@media screen and (max-width: 768px){
+
+.icono-flotante {
+ margin-left: 10px;
+ margin-bottom: 10px;
+}
 }
