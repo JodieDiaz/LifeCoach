@@ -50,12 +50,10 @@ header {
   margin: 0 auto;
   max-width: 1200px;
 }
-
-/* Media query para pantallas pequeñas */
-@media screen and (max-width: 768px) {
-  #header-content {
-    flex-direction: column; /* Cambiar a dirección de columna en pantallas pequeñas si es necesario */
-  }
+@media screen and (max-width: 768px){
+#header-content{
+  margin-left: 20px;
+}
 }
 
 /* navegador estilos */
@@ -306,7 +304,6 @@ header {
   height: 50px;
   border: none;
   padding-left: 10px;
-
 }
 
 .icono-flotante:hover {
@@ -315,9 +312,9 @@ header {
 }
 
 @media screen and (max-width: 768px){
-
-.icono-flotante {
+.icono-flotante img {
  margin-left: 10px;
  margin-bottom: 10px;
 }
+
 }
