@@ -25,7 +25,11 @@ body {
   padding: 0;
   top:0;
 }
-
+@media screen and (max-width: 768px) {
+  body {
+    padding: 0 10px;
+  }
+}
 /*** HEADER ****/
 header {
   position: fixed;
@@ -296,6 +300,8 @@ header {
   width: 50px; 
   height: 50px;
   border: none; 
+  margin: 10px;
+
 }
 
 .icono-flotante:hover {
