@@ -40,6 +40,7 @@ header {
   height: 60px;
   border-radius: 50px;
   margin: auto;
+  max-width: 1000px;
 }
 
 /* Nuevo contenedor para el logo y el menú */
@@ -50,11 +51,6 @@ header {
   transition: background-color 0.3s ease;
   margin: 0 auto;
   max-width: 1000px;
-}
-@media screen and (max-width: 768px){
-#header-content{
-  margin-left: 20px;
-}
 }
 
 /* navegador estilos */
