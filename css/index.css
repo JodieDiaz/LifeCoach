@@ -29,7 +29,7 @@
 
 #hero-section .parallax-bg {
   /* Increased contrast between text and background */
-  filter:brightness(0.6);
+  filter:brightness(0.9);
 }
 
 #hero-section h1 {
@@ -45,14 +45,21 @@
   font-style: italic;
   
 }
-
+@media (max-width: 768px) {
+  #hero-section {
+    margin: 0;
+  }
+}
 /* Estilos para pantallas pequeñas (menos de 768px de ancho) */
 @media screen and (max-width: 900px) {
+  #hero-secction{
+    margin: 0;
+  }
   #hero-section h1 {
     font-size: 34px; /* Tamaño de fuente deseado para pantallas pequeñas */
     margin: 10px;
   }
- #hero-section p {
+  #hero-section p {
   font-size: 17px;
   margin: 10px;
  }
@@ -93,7 +100,7 @@
   aspect-ratio: 1;
   border-radius: 100%;
   object-fit: cover;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .about-text-container {
@@ -158,6 +165,7 @@
 #questions-section li {
   margin: 25px auto;
   font-weight:lighter;
+  line-height: 1.5;
   color: #fff;
 }
 
@@ -201,6 +209,7 @@
   position: relative;
   overflow: hidden;
   padding-bottom: 80%;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .service-image img {
@@ -402,6 +411,7 @@
   border-radius: 8px;
   margin: 80px auto;
   color:#333;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .citas-content h2 {

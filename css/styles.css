@@ -13,6 +13,10 @@
   font-display: swap; 
 }
 
+p {
+  line-height: 1.6; /* Puedes ajustar este valor según tus preferencias */
+}
+
 @font-face {
   font-family: 'Dancing Script';
   font-style: normal;
