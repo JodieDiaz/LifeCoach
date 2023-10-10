@@ -144,7 +144,7 @@
 #questions-section .wrapper {
   display: flex;
   justify-content: center;
-  gap: 4em;
+  gap: 6em;
 }
 @media screen and (max-width: 500px) {
   #questions-section .wrapper {
